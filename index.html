@@ -3,57 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Library - Home</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Learnify - Online Library</title>
+    <link rel="stylesheet" href="mainpage.css">
 </head>
 <body>
-
     <header>
-        <div class="header-content">
-            <h1 class="animate-text">📖 Welcome to Learnify</h1>
-        </div>
+        <h1 class="logo">📖 Learnify</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="allbooks.html">Books</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+                <li><a href="index.html">Logout</a></li>
+
+            </ul>
+        </nav>
     </header>
 
-    <section class="hero-section">
-        <div class="hero-content">
-            <h2>Your Gateway to Knowledge</h2>
-            <p>Discover thousands of books, video lectures, and resources to fuel your learning journey.</p>
-            <a href="login.html" class="cta-button" id="getStartedBtn">Get Started</a>
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Welcome to Learnify</h2>
+            <p>Discover thousands of books and expand your knowledge with ease.</p>
+            <a href="#explore-section" class="btn" id="explore-btn">Explore Library</a>
         </div>
-        <div class="background-animation"></div>
+        <div class="floating-books"></div>
     </section>
 
-    <section class="features">
-        <h2 class="section-title">What We Offer</h2>
-        <div class="feature-grid">
-            <div class="feature-item">
-                <img src="pdf.png" alt="PDF Books Icon">
-                <h3>PDF Books</h3>
-                <p>Access a wide range of academic and non-academic books in PDF format.</p>
-            </div>
-            <div class="feature-item">
-                <img src="video.png" alt="Video Lectures Icon">
-                <h3>Video Lectures</h3>
-                <p>Watch tutorials and lectures to boost your learning experience.</p>
-            </div>
-            <div class="feature-item">
-                <img src="community.png" alt="Community Icon">
-                <h3>Community</h3>
-                <p>Engage with other learners, ask questions, and share knowledge.</p>
-            </div>
+    <section class="search-box">
+        <input type="text" placeholder="Search for books, authors, or topics..." />
+        <button>Search</button>
+    </section>
+
+    <!-- Explore Library Section -->
+    <section id="explore-section" class="explore-library">
+        <h2>Explore Library</h2>
+        <div class="library-options" style="border-color: black;">
+            <a href="videobooks.html" target="_blank" class="library-item">Video</a>
+            <a href="audiobooks.html" target="_blank" class="library-item">Audio Books</a>
+            <a href="novels.html" target="_blank" class="library-item">Novels</a>
+            <a href="allbooks.html" target="_blank" class="library-item">All Books</a>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 E-Library. All rights reserved.</p>
-        <div class="social-links">
-            <a href="#">🔗 Facebook</a>
-            <a href="#">🔗 Twitter</a>
-            <a href="#">🔗 Instagram</a>
-        </div>
+        <p>&copy; 2025 Learnify. All Rights Reserved.</p>
     </footer>
 
-    <script src="index.js"></script>
-
+    <script src="mainpage.js"></script>
 </body>
 </html>
